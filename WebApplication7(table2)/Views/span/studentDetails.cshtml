@@ -1,0 +1,39 @@
+﻿@model IEnumerable<WebApplication7_table2_.Models.Student>
+@{
+    Layout = null;
+  
+
+}
+
+<!DOCTYPE html>
+
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 50%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 1px;
+    }
+</style>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Id</th>
+        <th>Phno</th>
+    </tr>
+    @foreach (var b in Model)
+    {
+        <tr>
+            <td>@b.Name</td>
+            <td>@b.Id</td>
+            <td>@b.Phno</td>
+        </tr>
+    }
+    
+</table>

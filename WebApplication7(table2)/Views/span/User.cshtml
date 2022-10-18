@@ -1,0 +1,32 @@
+﻿@model WebApplication7_table2_.Models.Gopi
+@{
+    Layout = null;
+}
+
+
+<style>
+ 
+    
+</style>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>User</title>
+</head>
+
+<body>
+    @using (Html.BeginForm("UserDetails", "span"))
+    {
+       
+        <h1>Welcome to login page</h1>
+        <label >username</label>
+        @Html.TextBoxFor(a => a.Username)
+        <label>password</label>
+        @Html.TextBoxFor(a => a.Password)
+        <button>submit</button>
+    }
+
+</body>
+</html>
